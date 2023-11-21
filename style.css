@@ -1,0 +1,152 @@
+* {
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 153, 0);
+    height:15vh;
+
+}
+#bankAmblem{
+    width: 5rem;
+    height: 5rem;
+}
+#bankName{
+    color:rgb(0, 0, 0);
+    font-size:2rem;
+    text-align:center;
+    font-weight: bold;
+    margin-left:3vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.leftNavBar{
+    display:flex;
+    width: 15%;
+    padding-right:6rem;
+    align-items: center;
+}
+.rightNavBar{
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+    margin-right:3vw;
+}
+.navButtons{
+    text-decoration: none;
+    font-size:1rem;
+    text-align:center;
+    font-weight:bold;
+    color:aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.navButtons:hover{
+    background-color: lightblue;
+}
+section{
+    display:flex;
+    background-color:khaki;
+}
+.currencyBox{
+    width:20%;
+    position:fixed;
+    top:20vh;
+    transform:scale(1.2);
+}
+.currencyBox div{
+    display:flex;
+    width:80%;
+    height:4rem;
+    align-items: center;
+    border: 1px solid blue;
+    margin: 5% 10%;
+    border-radius:20px;
+}
+.currencyBox img{
+    height:40%;
+    width:15%;
+    margin-left:15%;
+}
+.currencyBox p{
+    margin-left:3rem;
+}
+.contentOfPage{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 1vh 20vw;
+    margin-left: 20vw;
+}
+.profileOfUser{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position:fixed;
+    width:30%;
+    left:75vw;
+    margin-top:-8.5rem;
+    margin-left:-1rem;
+    transform: scale(0.65);
+}
+.profileOfUser div{
+    margin: 1rem 1rem;
+    border-radius:15px;
+}
+#profileBox{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    text-align: center;
+    border:1px solid blue;
+}
+#profilePhoto{
+    height:8vh;
+    width:6vw;
+}
+.previousOperations{
+    text-align: center;
+    border:1px solid blue;
+}
+.previousOperations div{
+    border:1px solid blue;
+}
+#walletBox{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    border:1px solid blue;
+}
+#walletPhoto{
+    height:5rem;
+    width:5rem;
+    margin-bottom:-2rem;
+}
+footer{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:5rem;
+    background-color:orange;
+}
+footer a{
+    text-decoration: none;
+    color:aliceblue;
+    font-weight: bold;
+}
+footer a:hover{
+    background-color: lightblue;
+}
+footer p{
+    color:aliceblue;
+    font-weight: bold;
+}
+footer div{
+    display:flex;
+    flex-direction: column;
+    text-align:center;
+    width:60%;
+    margin-left:-3rem;
+}
