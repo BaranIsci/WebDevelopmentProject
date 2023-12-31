@@ -1,0 +1,56 @@
+[
+    {
+        "courseId":1,
+        "courseName": "Lineer Algebra For Engineers",
+        "instructorName": "Dilara Altan Koç",
+        "acts" : 6,
+        "midtermPercent":40,
+        "finalPercent":60,
+        "pointScale" : 7
+    },
+    {
+        "courseId":2,
+        "courseName": "Programming Fundamentals",
+        "instructorName": "Barış Ethem Süzek",
+        "acts" : 8,
+        "midtermPercent":35,
+        "finalPercent":65,
+        "pointScale":10
+    },
+    {
+        "courseId":3,
+        "courseName": "Digital Logic Design",
+        "instructorName": "Mahmut Tenruh",
+        "acts" : 4,
+        "midtermPercent":30,
+        "finalPercent":70,
+        "pointScale" : 10
+    },
+    {
+        "courseId":4,
+        "courseName": "Calculus I ",
+        "instructorName": "Gamze Koparan",
+        "acts" : 6,
+        "midtermPercent":40,
+        "finalPercent":60,
+        "pointScale": 10
+    },
+    {
+        "courseId":5,
+        "courseName": "General Physics I",
+        "instructorName": "Cahit Karanfil",
+        "acts" : 6,
+        "midtermPercent":50,
+        "finalPercent":50,
+        "pointScale": 7
+    },
+    {
+        "courseId":6,
+        "courseName": "Differential Equations",
+        "instructorName": "Ayşe Ölmez",
+        "acts" : 6,
+        "midtermPercent":10,
+        "finalPercent":90,
+        "pointScale":7
+    }
+]

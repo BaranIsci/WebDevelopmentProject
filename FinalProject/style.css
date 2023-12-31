@@ -1,0 +1,665 @@
+/* Resetting default styles and setting a global style for the body */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+    background-color: #1F2739;
+}
+
+/* Adding a pointer cursor for buttons */
+button {
+    cursor: pointer;
+}
+
+/* Styling for the navigation bar */
+nav {
+    width: 100%;
+    font-family: cursive;
+    height: 7rem;
+    background-color: #1abc9c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Styles for the left side of the navigation bar */
+.leftNavBar {
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for the right side of the navigation bar */
+.rightNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3rem;
+}
+
+.rightNavBar div {
+    display: flex;
+    align-items: center;
+}
+
+.rightNavBar img {
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+nav img {
+    width: 14rem;
+    height: 6rem;
+    margin: 1rem 3rem;
+}
+
+/* Styles for the main content section */
+section {
+    display: flex;
+}
+
+/* Styles for the left sidebar */
+.leftSideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 12%; /* Sidebar width */
+    padding: 1rem; /* Sidebar padding */
+    position: fixed;
+}
+
+.leftSideBar button {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    width: 90%;
+}
+
+/* Styles for the right section of the content */
+.rightSection {
+    font-family: cursive;
+    display: flex;
+    align-items: center;
+    width: 88%;
+    padding: 3rem 2rem;
+    margin-left: 14%;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #1abc9c;
+}
+
+/* Styles for even rows in the table */
+tbody tr:nth-child(even) {
+    background-color: #1abc9c;
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    transition: 1.5s;
+}
+
+/* Styles for the course grade container */
+.courseGradeContainer {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Styles for the course container */
+.courseContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Styles for select dropdowns */
+select {
+    background-color: #1abc9c;
+    color: #fff;
+    font-size: inherit;
+    padding: .5em;
+    padding-right: 2.5em;
+    border: 0;
+    margin: 0;
+    border-radius: 3px;
+    text-indent: 0.01px;
+    text-overflow: '';
+}
+
+/* Styles for sidebar buttons */
+.sideBarButton {
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 0.3rem 0.3rem #1abc9c;
+}
+
+/* Hover and focus effect for sidebar buttons */
+.sideBarButton:hover,
+.sideBarButton:focus {
+    background-color: #1abc9c;
+    box-shadow: 0rem 0rem;
+    color: white;
+}
+
+/* Styles for delete button */
+.deleteButton {
+    color: black;
+    background-color: #FB667A;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+/* Hover and focus effect for delete button */
+.deleteButton:hover,
+.deleteButton:focus {
+    box-shadow: inset 6.5em 0 0 0 #1abc9c;
+    color: black;
+}
+
+/* Styles for update button */
+.updateButton {
+    color: black;
+    background-color: #FB667A;
+    border-radius: 0.5rem;
+    transition: 1s;
+}
+
+/* Hover and focus effect for update button */
+.updateButton:hover,
+.updateButton:focus {
+    box-shadow: inset 6.5em 0 0 0 #1abc9c;
+    color: black;
+}
+
+/* Styles for various sections like adding student, adding course, and updating student form */
+#addStudentSection, #addCourseSection, #updateStudentForm {
+    max-width: 25rem;
+    margin: 1.25rem auto;
+    padding: 1.25rem;
+    background-color: #f4f4f4;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for section headings in the form sections */
+#addStudentSection h2, #addCourseSection h2, #updateStudentForm h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Styles for div elements in the form sections */
+#addStudentSection div, #addCourseSection div {
+    margin-bottom: 0.9375rem;
+}
+
+/* Styles for labels in the form sections */
+#addStudentSection label, #addCourseSection label, #updateStudentForm label {
+    display: block;
+    margin-bottom: 0.3125rem;
+    color: #555;
+}
+
+/* Styles for input, select, and button elements in the form sections */
+#addStudentSection input,
+#addStudentSection select,
+#addStudentSection button,
+#addCourseSection input,
+#addCourseSection select,
+#addCourseSection button,
+#updateStudentForm input {
+    width: 100%;
+    padding: 0.625rem;
+    box-sizing: border-box;
+    margin-bottom: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.25rem;
+}
+
+/* Styles for select dropdown in the form sections */
+#addStudentSection select, #addCourseSection select {
+    cursor: pointer;
+}
+
+/* Styles for buttons in the form sections */
+#addStudentSection button, #addCourseSection button {
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons in the form sections */
+#addStudentSection button:hover, #addCourseSection button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for paragraph elements in the form sections */
+#addStudentSection p, #addCourseSection p {
+    color: #777;
+    font-size: 0.875rem;
+}
+
+/* Styles for span elements within paragraphs in the form sections */
+#addStudentSection p span, #addCourseSection p span {
+    color: #f00;
+    font-weight: bold;
+}
+
+/* Styles for the students list table */
+#studentsList td {
+    font-weight: normal;
+    font-size: 1em;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+#studentsList {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+#studentsList button {
+    font-weight: bold;
+}
+
+#studentsList td, #studentsList th {
+    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-left: 2%;
+}
+
+/* Background color for odd rows in the students list table */
+#studentsList tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background color for even rows in the students list table */
+#studentsList tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+/* Background color for header (th) in the students list table */
+#studentsList th {
+    background-color: #1F2739;
+}
+
+/* Styles for hover effect on rows in the students list table */
+#studentsList tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119;
+}
+
+/* Styles for hover effect on cells in the students list table */
+#studentsList td:hover {
+    background-color: #FFF842;
+    color: #403E10;
+    font-weight: bold;
+    box-shadow: #7F7C21 -1px 1px, #7F7C21 -2px 2px, #7F7C21 -3px 3px, #7F7C21 -4px 4px,
+                #7F7C21 -5px 5px, #7F7C21 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+/* Styles for search input */
+#searchInput {
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+/* Styles for search button */
+#searchButton {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+/* Hover effect for search button */
+#searchButton:hover {
+    background-color: #45a049;
+}
+
+/* Styles for update student form with additional comments */
+#updateStudentForm .courseContainer {
+    margin-bottom: 1rem; /* Margin between course container and other form elements */
+}
+
+#updateStudentForm .courseGradeContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem; /* Margin between each course grade container */
+}
+
+#updateStudentForm .deleteCourseButton {
+    margin-left: 0.5rem; /* Margin between delete button and other elements in course container */
+    cursor: pointer;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+#updateStudentButton, #addCourseToStudent {
+    background-color: #5bc0de;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+/* Hover effect for update student button */
+#updateStudentButton:hover , #addCourseToStudent:hover{
+    background-color: #46b8da;
+}
+
+/* Styles for the courses list table */
+#coursesList td {
+    font-weight: normal;
+    font-size: 1rem;
+    -webkit-box-shadow: 0 0.125rem 0.125rem -0.125rem #0E1119;
+    -moz-box-shadow: 0 0.125rem 0.125rem -0.125rem #0E1119;
+    box-shadow: 0 0.125rem 0.125rem -0.125rem #0E1119;
+}
+
+#coursesList {
+    text-align: left;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    display: table;
+    padding: 0 0 8em 0;
+}
+
+#coursesList button {
+    font-weight: bold;
+}
+
+#coursesList td,
+#coursesList th {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Background color for odd rows in the courses list table */
+#coursesList tr:nth-child(odd) {
+    background-color: #323C50;
+}
+
+/* Background color for even rows in the courses list table */
+#coursesList tr:nth-child(even) {
+    background-color: #2C3446;
+}
+
+/* Background color for header (th) in the courses list table */
+#coursesList th {
+    background-color: #1F2739;
+}
+
+#coursesList td:first-child {
+    color: #FB667A;
+}
+
+/* Styles for hover effect on rows in the courses list table */
+#coursesList tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 0.375rem 0.375rem -0.375rem #0E1119;
+    -moz-box-shadow: 0 0.375rem 0.375rem -0.375rem #0E1119;
+    box-shadow: 0 0.375rem 0.375rem -0.375rem #0E1119;
+}
+
+/* Styling for the hover effect on table cells in the courses list */
+#coursesList td:hover {
+    background-color: #FFF842;
+    color: #403E10;
+    font-weight: bold;
+
+    box-shadow: #7F7C21 -0.0625rem 0.0625rem, #7F7C21 -0.125rem 0.125rem, #7F7C21 -0.1875rem 0.1875rem,
+                #7F7C21 -0.25rem 0.25rem, #7F7C21 -0.3125rem 0.3125rem, #7F7C21 -0.375rem 0.375rem;
+    transform: translate3d(0.375rem, -0.375rem, 0);
+
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line;
+}
+
+/* Styling for strong elements inside paragraphs in the courses list */
+#coursesList p strong {
+    color: #FB667A;
+}
+
+/* Styling for the hover effect on delete course buttons */
+.deleteCourseButton:hover {
+    background-color: #d9534f;
+}
+#updateStudentButton, #addCourseToStudent{
+    margin-top: 1rem;
+}
+/* Media query for screens with a maximum width of 850px */
+@media screen and (max-width: 850px) {
+    nav {
+        height: 5rem; /* Adjusting the height for smaller screens */
+    }
+    
+    nav img {
+        width: 10rem; /* Adjusting the width for smaller screens */
+        height: 4rem; /* Adjusting the height for smaller screens */
+        margin: 0.5rem 1.5rem; /* Adjusting the margin for smaller screens */
+    }
+    
+    nav div {
+        font-size: 0.7rem; /* Adjusting the font size for smaller screens */
+        margin-right: 1rem; /* Adjusting the margin for smaller screens */
+    }
+
+    /* Additional styles for smaller screens */
+    section {
+        flex-direction: column;
+    }
+  
+    .leftSideBar {
+        width: 100%;
+        position: relative;
+    }
+  
+    .rightSection {
+        width: 100%;
+        margin-left: 0;
+    }
+  
+    #studentsList,
+    #coursesList {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+  
+    table,
+    th,
+    td {
+        font-size: 0.8rem;
+    }
+  
+    .courseGradeContainer {
+        flex-direction: column;
+    }
+  
+    #addStudentSection,
+    #addCourseSection,
+    #updateStudentForm {
+        max-width: 100%;
+        margin: 0 1rem; /* Adjusting the margin for smaller screens */
+    }
+  
+    #addStudentSection button,
+    #addCourseSection button,
+    #updateStudentButton, #addCourseToStudent{
+        padding: 0.8rem; /* Adjusting the button padding for smaller screens */
+        font-size: 1rem;
+    }
+
+    #searchInput {
+        padding: 0.8rem;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    
+    #searchButton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Additional styles for smaller screens can be added here */
+}
+@media screen and (max-width: 1000px){
+    #studentsList td:nth-child(6),
+    #studentsList th:nth-child(6),
+    #studentsList td:nth-child(7),
+    #studentsList th:nth-child(7){
+        display: none;
+    }
+}
+/* Media query for screens with a maximum width of 650px */
+@media screen and (max-width: 650px) {
+    nav {
+        height: 4rem; /* Adjusting the height for even smaller screens */
+    }
+
+    nav div img {
+        width: 8rem; /* Adjusting the width for even smaller screens */
+        height: 3rem; /* Adjusting the height for even smaller screens */
+        margin: 0.5rem 0.5rem; /* Adjusting the margin for even smaller screens */
+    }
+
+    nav div {
+        font-size: 0.6rem; /* Adjusting the font size for even smaller screens */
+        margin-right: 0.2rem; /* Adjusting the margin for even smaller screens */
+    }
+
+    /* Additional styles for even smaller screens can be added here */
+}
+
+/* Media query for screens with a maximum width of 500px */
+@media screen and (max-width: 500px) {
+    #profileImage {
+        display: none; /* Hiding the profile image for screens with a maximum width of 500px */
+    }
+    
+    #hogwartsImage {
+        display: none; /* Hiding the Hogwarts image for screens with a maximum width of 500px */
+    }
+
+    /* Hiding the 6th column in the courses list for screens with a maximum width of 500px */
+    #coursesList td:nth-child(6),
+    #coursesList th:nth-child(6) {
+        display: none;
+    }
+
+    /* Additional styles for screens with a maximum width of 500px can be added here */
+}
+
+/* Media query for screens with a maximum width of 450px */
+@media screen and (max-width: 450px) {
+    #studentsList td:nth-child(3),
+    #studentsList th:nth-child(3),
+    #studentsList td:nth-child(4),
+    #studentsList th:nth-child(4){
+        display: none;
+    }
+    /* Hiding the 5th column in the courses list for screens with a maximum width of 450px */
+    #coursesList td:nth-child(5),
+    #coursesList th:nth-child(5) {
+        display: none;
+    }
+
+    nav div img {
+        width: 5rem; /* Adjusting the width for smaller screens */
+        height: 3rem; /* Adjusting the height for smaller screens */
+        margin: 0.5rem 0.5rem; /* Adjusting the margin for smaller screens */
+    }
+
+    nav div {
+        font-size: 0.4rem; /* Adjusting the font size for smaller screens */
+        margin-right: 0.3rem; /* Adjusting the margin for smaller screens */
+    }
+
+    /* Additional styles for smaller screens can be added here */
+}
+
+/* Media query for screens with a maximum width of 350px */
+@media screen and (max-width: 350px) {
+    nav div img {
+        width: 1rem; /* Adjusting the width for even smaller screens */
+        margin: 0.5rem 0.5rem; /* Adjusting the margin for even smaller screens */
+    }
+
+    nav div {
+        font-size: 0.25rem; /* Adjusting the font size for even smaller screens */
+        margin-right: 0.25rem; /* Adjusting the margin for even smaller screens */
+    }
+
+    /* Hiding the 3rd column in the courses list for screens with a maximum width of 350px */
+    #coursesList td:nth-child(3),
+    #coursesList th:nth-child(3) {
+        display: none;
+    }
+
+    /* Additional styles for even smaller screens can be added here */
+}
+
+/* Media query for screens with a maximum width of 250px */
+@media screen and (max-width: 250px) {
+    #studentsList td:nth-child(2),
+    #studentsList th:nth-child(2) {
+        display: none;
+    }
+    /* Hiding the 2nd column in the courses list for screens with a maximum width of 250px */
+    #coursesList td:nth-child(2),
+    #coursesList th:nth-child(2) {
+        display: none;
+    }
+
+    /* Additional styles for screens with a maximum width of 250px can be added here */
+}

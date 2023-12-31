@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta etiketleri -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS dosyası -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JavaScript modüllerinin bağlantıları -->
+    <script type="module" src="./coursesToLocal.js" defer></script>
+    <script type="module" src="./studentsToLocal.js" defer></script>
+    <script type="module" src="./coursesToArray.js" defer></script>
+    <script type="module" src="./studentsToArray.js" defer></script>
+    <script type="module" src="./listAllStudents.js" defer></script>
+    <script type="module" src="./listAllCourses.js" defer></script>
+    <script type="module" src="./student.js" defer></script>
+    <script type="module" src="./course.js" defer></script>
+    <script type="module" src="./main.js" defer></script>
+    <script type="module" src="./addStudent.js" defer></script>
+    <script type="module" src="./addCourse.js" defer></script>
+
+    <!-- Sayfa başlığı -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header bölümü -->
+    <header>
+        <!-- Navigasyon menüsü -->
+        <nav>
+            <!-- Sol taraftaki navigasyon bölümü -->
+            <div class="leftNavBar">
+                <!-- Üniversite logosu -->
+                <div id="hogwartsImage">
+                    <img src="./assets/hogwarts.png" alt="">
+                </div>
+                <!-- Üniversite adı -->
+                <p> Muğla Sıtkı Koçman Üniversitesi</p>
+            </div>
+            
+            <!-- Sağ taraftaki navigasyon bölümü -->
+            <div class="rightNavBar">
+                <!-- Anasayfa ikonu -->
+                <div>
+                    <img src="./assets/home.png" alt="" id="homeImage">
+                </div>
+                <!-- Hakkımızda -->
+                <div>
+                    <p>About Us</p>
+                </div>
+                <!-- Profil resmi -->
+                <div id="profileImage">
+                    <img src="./assets/profile.png" alt="">
+                </div>
+                <!-- Kullanıcı adı -->
+                <div>
+                    <p> Welcome, Selahattin </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Ana içerik bölümü -->
+    <section>
+        <!-- Sol tarafaki menü bölümü -->
+        <div class="leftSideBar">
+            <!-- Öğrenci Ekle butonu -->
+            <button class="sideBarButton" id="addStudent"> Add Student</button>
+            <!-- Öğrenci Ara butonu -->
+            <button class="sideBarButton" id="searchStudent"> Search Student</button>
+            <!-- Ders Ekle butonu -->
+            <button class="sideBarButton" id="addCourse"> Add Course</button>
+            <!-- Ders Ara butonu -->
+            <button class="sideBarButton" id="searchCourse"> Search Course</button>
+        </div>
+        
+        <!-- Sağ tarafaki ana içerik bölümü -->
+        <div class="rightSection">
+            <!-- Öğrenci Ekleme Formu -->
+            <div class="container" id="addStudentSection">
+                <h2>Add Student</h2>
+                <!-- Öğrenci ID'si giriş alanı -->
+                <div>
+                    <label for="studentId">Student ID</label>
+                    <input type="number" id="studentId" placeholder="Student ID">
+                </div>
+                <!-- Öğrenci adı giriş alanı -->
+                <div>
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" placeholder="First Name">
+                </div>
+                <!-- Öğrenci soyadı giriş alanı -->
+                <div>
+                    <label for="surname">Last Name</label>
+                    <input type="text" id="surname" placeholder="Last Name">
+                </div>
+                <!-- Alınan ders adı seçme alanı -->
+                <div>
+                    <label for="takenCourseName">Taken Course Name</label>
+                    <select id="takenCourseName">
+                        <option value="" selected disabled>Select a Course</option>
+                    </select>
+                </div>
+                <!-- Alınan dersin notu giriş alanı -->
+                <div>
+                    <label for="courseGrade">Grades</label>
+                    <input type="text" id="courseGrade" placeholder="Grades">
+                </div>
+                <!-- Öğrenci ekleme butonu -->
+                <button id="addStudentButton">Add Student</button>
+                <!-- Bilgilendirme metni -->
+                <p> <span><strong>Be careful!</strong> You have to write grades with <strong>comma</strong> like that : 88, 95</span></p>
+            </div>
+            
+            <!-- Ders Ekleme Formu -->
+            <div class="container" id="addCourseSection">
+                <h2>Add Course</h2>
+                <!-- Ders ID'si giriş alanı -->
+                <div>
+                    <label for="courseId">Course ID</label>
+                    <input type="number" id="courseId" placeholder="Course ID">
+                </div>
+                <!-- Ders adı giriş alanı -->
+                <div>
+                    <label for="courseName">Course Name</label>
+                    <input type="text" id="courseName" placeholder="Course Name">
+                </div>
+                <!-- Öğretmen adı giriş alanı -->
+                <div>
+                    <label for="instructorName">Instructor Name</label>
+                    <input type="text" id="instructorName" placeholder="Instructor Name">
+                </div>
+                <!-- Dersin AKTS değeri giriş alanı -->
+                <div>
+                    <label for="courseActs">ACTS of Course</label>
+                    <input type="number" id="courseActs" placeholder="ACTS of Course">
+                </div>
+                <!-- Dersin ara sınav yüzdesi giriş alanı -->
+                <div>
+                    <label for="courseMPercent">Midterm Percent Of Course</label>
+                    <input type="number" id="courseMPercent" placeholder="Midterm Percent Of Course">
+                </div>
+                <!-- Dersin not skalası giriş alanı -->
+                <div>
+                    <label for="pointScale">Point Scale Of Course</label>
+                    <input type="number" id="pointScale" placeholder="Point Scale Of Course">
+                </div>
+                <!-- Ders ekleme butonu -->
+                <button id="addCourseButton">Add Course</button>
+                <!-- Bilgilendirme metni -->
+                <p> <span><strong>Be careful!</strong> You have to write grades with <strong>comma</strong> like that : 88, 95</span></p>
+            </div>
+            
+            <!-- Öğrenci Güncelleme Formu -->
+            <div class="container" id="updateStudentForm"></div>
+            
+            <!-- Ders Listesi -->
+            <div class="container" id="coursesList">
+                <div id="studentsForCourseList"></div>
+            </div>
+            
+            <!-- Öğrenci Listesi -->
+            <div class="container" id="studentsList"></div>
+            
+            <!-- Anasayfa İçeriği -->
+            <p class="container" id="HomeContentOfPage"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem aliquid maxime exercitationem, totam aliquam animi ab, distinctio odio ea, nesciunt veniam eius neque fuga? Unde dicta molestias aut alias doloremque ipsum consectetur vel minima porro, cumque a nihil, autem dolorum sequi deserunt enim laborum cum ratione temporibus quod maiores. Atque voluptatem dignissimos earum voluptas quod numquam officiis, iste nesciunt suscipit maxime neque repellat. Dolores, blanditiis ratione suscipit provident, ducimus atque libero enim doloremque obcaecati veniam repudiandae debitis facere omnis minus rerum laudantium molestiae vero delectus et dignissimos ipsa nam. Nobis, sunt. Ut, quod nulla modi similique quis quo aspernatur nostrum numquam aut necessitatibus itaque commodi mollitia rerum veritatis doloribus, tempora eligendi, quaerat placeat quisquam veniam? Quaerat, aperiam doloremque voluptatem quisquam deserunt, modi voluptate veritatis, corporis voluptates delectus provident! Minima error rem repellendus porro a possimus fuga eligendi sapiente ex laudantium, vero omnis magni, enim quibusdam dolorum doloribus sed quam nesciunt incidunt minus saepe. Vero velit expedita praesentium, error similique eius incidunt, ipsa ullam accusantium est voluptatem eos aspernatur deleniti architecto inventore! Neque voluptatum autem recusandae hic optio saepe distinctio nemo perferendis non animi tempora error quaerat, culpa, consequatur minus, omnis in architecto facilis consequuntur. Quo, accusamus! Sapiente nemo, provident odit tempora, minima animi ea rerum velit perspiciatis commodi quidem, suscipit maxime nobis? Provident sunt fugit laborum in praesentium ex eligendi quia sapiente iusto laboriosam ducimus animi, deserunt, rerum dolorum ipsam! Repellendus saepe consequatur similique reiciendis deleniti labore molestiae, illum exercitationem ratione mollitia nulla! Minima nulla velit dignissimos earum. Qui exercitationem fugiat voluptatum, iusto odio pariatur accusantium sequi omnis? Eum, facilis alias a magnam ea quam nobis numquam veritatis mollitia nulla perspiciatis esse aut nostrum suscipit asperiores eos. Itaque recusandae vero libero molestias fuga labore ullam quibusdam doloremque voluptatum voluptate, distinctio ratione dolore, minus odio cupiditate blanditiis provident laudantium? Nihil eius quasi vel quis commodi, odio voluptatum voluptas aspernatur praesentium obcaecati numquam. Atque eligendi praesentium accusantium. Eveniet pariatur veritatis sequi, ipsam non totam nostrum tempore numquam a corrupti deserunt neque necessitatibus in illo soluta placeat. Ex veniam suscipit nam obcaecati voluptas cumque dolor deleniti facilis vitae ea in dicta odit sit recusandae, iure inventore. Illum quam maiores alias ratione. Ea quae repellendus cumque commodi ullam quis eius sit voluptas laboriosam doloribus voluptatem, est tenetur autem sed qui dolore. Consectetur, amet eaque suscipit accusantium odio nesciunt quaerat, doloremque repellendus blanditiis aut, at obcaecati fugiat id ratione eum voluptatibus veritatis omnis rerum sint eveniet quod ab. Saepe facere consequatur magnam nihil ratione, soluta, repellat sequi dolorum impedit magni architecto quidem qui voluptates pariatur vero at laudantium enim. Dolorem vero necessitatibus id. Amet sequi laudantium placeat accusantium nihil libero, cupiditate, nobis ab doloremque cumque molestiae modi a temporibus vel. Adipisci ipsum labore amet, sed vero et ullam sapiente consequuntur repudiandae odio voluptatum animi soluta delectus porro ducimus quia earum nam nisi nulla dolores sunt qui corporis veritatis voluptatibus. Minus veritatis et vel aliquam officiis, consequatur est culpa corporis alias aut odio, illo deserunt consectetur sint repellendus modi? Maxime delectus ea harum nostrum officiis quidem rerum, pariatur neque, consectetur tenetur non cum repudiandae ad nemo velit iure reiciendis ducimus at accusamus sapiente est. Doloribus deserunt eligendi temporibus animi ea a provident enim molestiae tenetur, id aliquid voluptatibus. Atque quia ipsum sed labore ab consequuntur ducimus vero nisi voluptatibus impedit inventore magnam fugiat consectetur doloribus praesentium, obcaecati quisquam vitae! Harum aliquam repellat culpa nulla vel blanditiis obcaecati fuga atque officiis fugiat, nemo aut repellendus architecto sunt amet ullam assumenda labore eum libero. Obcaecati officiis neque officia culpa explicabo perspiciatis repellat sunt distinctio consectetur. Dolorum, maiores. Illo, doloribus, id veniam architecto eum nihil rerum quibusdam accusamus quasi fuga ratione obcaecati laudantium pariatur assumenda perspiciatis atque excepturi ullam blanditiis quas ad dolorum. Eveniet ipsa sit pariatur et voluptate inventore architecto quibusdam ipsam sunt qui molestiae eligendi ipsum, fuga fugiat. Sequi praesentium temporibus officiis? Dolorem mollitia odio culpa perferendis necessitatibus dolore alias enim molestiae debitis hic repellat explicabo fugit, asperiores fugiat tempora saepe? Quaerat alias sit, laudantium voluptate architecto nulla consectetur ea consequuntur doloribus commodi consequatur voluptatum iusto? Corporis ea beatae sint, exercitationem itaque nihil veniam molestias impedit asperiores sed vero tempora harum numquam cumque quasi id praesentium! Veniam cum officiis excepturi, rem ipsa odit voluptas blanditiis quasi nesciunt quod qui quidem? Ullam consequatur reiciendis minus magni impedit dolorem, at cupiditate sit veniam eum facilis ipsum veritatis repellendus! Minima tempora consequuntur quo vel! Nesciunt cupiditate explicabo quisquam tempora amet sed placeat tenetur aut nemo voluptates, mollitia nobis, quod est, repellat modi. Non reiciendis possimus quos, iusto porro molestias? Recusandae eaque laudantium consequatur veniam praesentium, aspernatur expedita, quasi molestiae voluptates fuga magnam quam quidem, optio corporis. Tenetur non voluptatem magnam sunt voluptate exercitationem fugiat beatae accusantium, eius optio tempore doloribus velit alias quae at nam veniam vitae quisquam fuga cum! Cupiditate amet quo esse rem ullam dolorum sunt eligendi earum laudantium cum? Doloremque molestias illum rem numquam voluptatem provident recusandae alias repudiandae nulla quam laudantium sit nobis, corrupti unde, error itaque autem perspiciatis enim veniam id quis non. Odit, cum veritatis reiciendis temporibus possimus quae culpa! Itaque recusandae omnis quod. Maxime, provident sed qui dicta fugiat hic dolore non deleniti repellat modi porro quidem tempore voluptates culpa deserunt similique ad. Magni alias sequi quod quasi, ipsam officia, quo numquam dolor accusamus adipisci placeat a aut in architecto tempore saepe suscipit maxime sed quos! Placeat totam dolorem reiciendis quisquam est aliquam facilis. Eaque sed ducimus, quis excepturi veniam sit culpa veritatis aut corporis esse temporibus autem et. Error tempore vitae vel, fugiat dolore itaque voluptates repellendus ipsum est ipsam placeat ducimus repellat possimus id recusandae atque hic reiciendis debitis, quibusdam iure quae odio distinctio ab excepturi? Tempore temporibus id officiis enim? Officiis tenetur ipsam sequi iste iure quae cupiditate libero quam! Debitis hic eveniet reprehenderit, voluptates praesentium nostrum voluptatibus et, excepturi temporibus ad aut labore officia veritatis quae doloribus. Laudantium, praesentium? Ex quaerat similique quasi commodi voluptates deleniti harum! Laborum optio maxime velit perspiciatis aliquam, laudantium doloremque laboriosam delectus! Placeat aut magnam eveniet voluptatum, adipisci illo error! Unde ipsa dolor qui.</p>
+        </div>
+    </section>
+</body>
+</html>
